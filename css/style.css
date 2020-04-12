@@ -12,20 +12,106 @@ body {
 .intro {
   top: 0;
   background: #e0ebe8;
-  min-height: 55vh;
-  padding-top: 45vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 45vh; */
   /*   line-height: 100vh; */
   /*   width:100%;
   height:96vh;
 border:solid; */
 }
 
+.about_content {
+  width: 100%; 
+  margin: 0 auto;
+  -webkit-animation:colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    
+    color: blue;
+  }
+  
+  10% {
+    
+    color: #8e44ad;
+  }
+  
+  20% {
+    
+    color: #1abc9c;
+  }
+  
+  30% {
+    
+    color: #d35400;
+  }
+  
+  40% {
+    
+    color: blue;
+  }
+  
+  50% {
+    
+    color: #34495e;
+  }
+  
+  60% {
+    
+    color: blue;
+  }
+  
+  70% {
+    
+    color: #2980b9;
+  }
+  80% {
+ 
+    color: #f1c40f;
+  }
+  
+  90% {
+ 
+    color: #2980b9;
+  }
+  
+  100% {
+    
+    color: pink;
+  }
+}
+
+.intro_content {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30vh; */
+}
+
 .intro p {
   color: green;
 }
 
+.headerImg {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.profileImg {
+  border-radius: 50%;
+  width: 200px;
+}
+
 nav ul {
-  text-align: right;
+  /* text-align: right; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100%;
   background-color: #e0ebe8;
@@ -47,12 +133,36 @@ nav ul li a:hover {
   color: green;
 }
 
-.work {
+.work-projects {
   padding-top: 60px;
-  margin-top: -60px;
+  min-height: 100vh;
+  background: #E5F7E2;
+  /* margin-top: -60px; */
+  /* background-image: url("../assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
+  background-size: 100% 100%; */
 }
 
-.work .work-header {
+.work-projects .work-projects-header {
+  margin-top: 50px;
+  color: #008080;
+  font-weight: normal;
+}
+
+.work-project-pic {
+  width: 80%;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.hobby-projects {
+  padding-top: 60px;
+  min-height: 100vh;
+  /* margin-top: -60px; */
+  /* background-image: url("../assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
+  background-size: 100% 100%; */
+}
+
+.hobby-projects .hobby-projects-header {
   margin-top: 50px;
   color: #008080;
   font-weight: normal;
@@ -63,7 +173,7 @@ nav ul li a:hover {
   color: #008080;
   display: inline-block;
   overflow: hidden;
-  border: 2px solid lightblue;
+  /* border: 2px solid lightblue; */
   height: 220px;
   width: 280px;
   margin: 40px 100px;
@@ -73,7 +183,7 @@ nav ul li a:hover {
 .project-pic {
   width: 100%;
   height: 180px;
-  border-bottom: 2px solid lightblue;
+  /* border: 2px solid lightblue; */
 }
 
 .project-title {
@@ -85,8 +195,8 @@ nav ul li a:hover {
   display: block;
   width: 200px;
   height: 30px;
-  margin: 20px auto 90px;
-   background: #e0ebe8;
+  margin: 20px auto 20px;
+  background: #e0ebe8;
   color: #008080;
   font-weight: bold;
   font-size: 1em;
@@ -117,12 +227,17 @@ nav ul li a:hover {
 .contact {
   /*   height:800px; */
   /*   min-height:800px; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #C8F7C5;
   padding-bottom: 160px;
 }
 
 .header {
-  padding: 160px 0 110px;
+  padding: 60px 0 110px;
 }
 
 .contact-details {
@@ -156,12 +271,18 @@ footer a {
   color: white;
 }
 
+
 @media only screen and (max-width: 367px) {
   /*    #contact{
     min-height:1100px;
   } */
   .contact-details {
     border: 2px solid #90C695;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 0;
     width: 90px;
     height: 20px;
