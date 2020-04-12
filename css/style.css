@@ -137,9 +137,21 @@ nav ul li a:hover {
   padding-top: 60px;
   min-height: 100vh;
   background: #E5F7E2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* margin-top: -60px; */
   /* background-image: url("../assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
   background-size: 100% 100%; */
+}
+
+.work-projects-display-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 
 .work-projects .work-projects-header {
@@ -157,9 +169,21 @@ nav ul li a:hover {
 .hobby-projects {
   padding-top: 60px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* margin-top: -60px; */
   /* background-image: url("../assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
   background-size: 100% 100%; */
+}
+
+.hobby-projects-display-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 
 .hobby-projects .hobby-projects-header {
